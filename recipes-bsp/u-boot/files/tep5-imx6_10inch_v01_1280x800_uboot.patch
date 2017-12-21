@@ -1,0 +1,29 @@
+diff --git a/board/technexion/tek-imx6/tek-imx6.c b/board/technexion/tek-imx6/tek-imx6.c
+index ca4d800..e24aa3b 100755
+--- a/board/technexion/tek-imx6/tek-imx6.c
++++ b/board/technexion/tek-imx6/tek-imx6.c
+@@ -480,16 +480,16 @@ struct display_info_t const displays[] = {{
+ 	.detect = NULL,
+ 	.enable = enable_lvds,
+ 	.mode	= {
+-		.name		= "hj070na",
++		.name		= "10inch_v01",
+ 		.refresh	= 60,
+-		.xres		= 1024,
+-		.yres		= 600,
+-		.pixclock	= 15385,
+-		.left_margin	= 220,
++		.xres		= 1280,
++		.yres		= 800,
++		.pixclock	= 1000000000000ULL/71100000,
++		.left_margin	= 40,
+ 		.right_margin	= 40,
+-		.upper_margin	= 21,
+-		.lower_margin	= 7,
+-		.hsync_len	= 60,
++		.upper_margin	= 10,
++		.lower_margin	= 3,
++		.hsync_len	= 50,
+ 		.vsync_len	= 10,
+ 		.sync		= FB_SYNC_EXT,
+ 		.vmode		= FB_VMODE_NONINTERLACED
