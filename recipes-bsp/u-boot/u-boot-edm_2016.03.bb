@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
 PROVIDES += "u-boot"
 
 SRCBRANCH = "tn-imx_v2016.03"
-SRCREV = "5a46ee81057c68b5c6155b09a362240eb8356db6"
+SRCREV = "3859611efdfa85dde29b48e5778793f1e2926e24"
 SRC_URI = "git://github.com/TechNexion-customization/uboot-imx-tn.git;branch=${SRCBRANCH} \
            "
 S = "${WORKDIR}/git"
